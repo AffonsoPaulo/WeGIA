@@ -1,0 +1,29 @@
+@media print{
+    #header {
+        display: none;
+    }
+
+    .menuu {
+        display: none;
+    }
+
+    .panel-heading {
+        display: none;
+    }
+
+    .content-body {
+        padding: 0;
+    }
+
+    .print-hide {
+        display: none;
+    }
+}
+
+.align-right{
+    text-align: right;
+}
+
+.print-button {
+    width: fit-content !important;
+}

@@ -1,0 +1,38 @@
+Requisitos de software para funcionamento
+
+Sistema Operacional: Debian 11
+Servidor Web: Apache 2.4
+PHP: 7.4
+MariaDB: > 10.2.3
+Git: > 2.20.1
+
+apt install apache2 mariadb-server git python3-certbot-apache php7.4 php7.4-cli php7.4-common php7.4-curl php7.4-gd php7.4-intl php7.4-json php7.4-mbstring php7.4-mysql php7.4-opcache php7.4-readline php7.4-soap php7.4-xml php7.4-xmlrpc php7.4-zip
+
+nano /etc/apache2/sites-available/wegia.conf
+<VirtualHost *:80>
+        ServerName wegia.instituicao.org 
+        DocumentRoot /var/www/WeGIA
+</VirtualHost>
+
+a2ensite wegia.conf
+systemctl reload apache2
+
+sudo -u www-data git -C /tmp clone https://github.com/nilsonmori/WeGIA.git
+
+mv /tmp/WeGIA /var/www/
+
+mkdir /var/www/bkpWeGIA
+chmod 777 /var/www/bkpWeGIA -R
+
+certbot --apache -d wegia.instituicao.org
+
+systemctl reload apache2
+
+mysql -u root
+CREATE USER 'wegiauser'@'localhost' IDENTIFIED BY 'senha';
+CREATE DATABASE wegia;
+GRANT ALL PRIVILEGES ON wegia.* TO 'wegiauser'@'localhost' WITH GRANT OPTION;
+FLUSH PRIVILEGES;
+quit;
+
+https://wegia.instituicao.org/instalador/
