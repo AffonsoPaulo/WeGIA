@@ -21,12 +21,6 @@ Prof Nilson Mori Lazarin
 Cefet/RJ Campus Nova Friburgo
 
 nilson.lazarin@cefet-rj.br
-<<<<<<< HEAD
-=======
 
-<<<<<<< HEAD
 FORK
-=======
 Rebeca Testando
->>>>>>> 85d199ac2a32629c26d57f2d455f89ed5cdee6bc
->>>>>>> 7c6b386ee5c8d75ed63a254d607f549813bac675
