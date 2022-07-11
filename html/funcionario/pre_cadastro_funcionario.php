@@ -1,5 +1,5 @@
 <?php
-
+// OI!
 $config_path = "config.php";
 if(file_exists($config_path)){
     require_once($config_path);
