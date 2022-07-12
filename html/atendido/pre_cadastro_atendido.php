@@ -77,31 +77,31 @@ require_once ROOT."/html/personalizacao_display.php";
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
     <link href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800|Shadows+Into+Light" rel="stylesheet" type="text/css">
     <!-- Vendor CSS -->
-    <link rel="stylesheet" href="<?php //echo WWW;?>/assets/vendor/bootstrap/css/bootstrap.css" />
-    <link rel="stylesheet" href="<?php //echo WWW;?>/assets/vendor/font-awesome/css/font-awesome.css" />
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
-    <link rel="stylesheet" href="<?php //echo WWW;?>/assets/vendor/magnific-popup/magnific-popup.css" />
-    <link rel="stylesheet" href="<?php //echo WWW;?>/assets/vendor/bootstrap-datepicker/css/datepicker3.css" />
+    <link rel="stylesheet" href="<?php echo WWW;?>assets/vendor/bootstrap/css/bootstrap.css" />
+    <link rel="stylesheet" href="<?php echo WWW;?>assets/vendor/font-awesome/css/font-awesome.css" />
+    <link rel="stylesheet" href="https:use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <link rel="stylesheet" href="<?php echo WWW;?>assets/vendor/magnific-popup/magnific-popup.css" />
+    <link rel="stylesheet" href="<?php echo WWW;?>assets/vendor/bootstrap-datepicker/css/datepicker3.css" />
     <link rel="icon" href="<?php display_campo("Logo",'file');?>" type="image/x-icon" id="logo-icon">
 
     <!-- Specific Page Vendor CSS -->
-    <link rel="stylesheet" href="<?php //echo WWW;?>/assets/vendor/select2/select2.css" />
-    <link rel="stylesheet" href="<?php //echo WWW;?>/assets/vendor/jquery-datatables-bs3/assets/css/datatables.css" />
+    <link rel="stylesheet" href="<?php echo WWW;?>assets/vendor/select2/select2.css" />
+    <link rel="stylesheet" href="<?php echo WWW;?>assets/vendor/jquery-datatables-bs3/assets/css/datatables.css" />
 
     <!-- Theme CSS -->
-    <link rel="stylesheet" href="<?php //echo WWW;?>/assets/stylesheets/theme.css" />
+    <link rel="stylesheet" href="<?php echo WWW;?>assets/stylesheets/theme.css" />
 
     <!-- Skin CSS -->
-    <link rel="stylesheet" href="<?php //echo WWW;?>/assets/stylesheets/skins/default.css" />
+    <link rel="stylesheet" href="<?php echo WWW;?>assets/stylesheets/skins/default.css" />
 
     <!-- Theme Custom CSS -->
-    <link rel="stylesheet" href="<?php //echo WWW;?>assets/stylesheets/theme-custom.css">
+    <link rel="stylesheet" href="<?php echo WWW;?>assets/stylesheets/theme-custom.css">
 
     <!-- Head Libs -->
     <script src="<?php echo WWW;?>assets/vendor/modernizr/modernizr.js"></script>
         
     <!-- Vendor -->
-    <script src="<?php //echo WWW;?>/assets/vendor/jquery/jquery.min.js"></script>
+    <script src="<?php echo WWW;?>assets/vendor/jquery/jquery.min.js"></script>
     <script src="<?php echo WWW;?>assets/vendor/jquery-browser-mobile/jquery.browser.mobile.js"></script>
     <script src="<?php echo WWW;?>assets/vendor/bootstrap/js/bootstrap.js"></script>
     <script src="<?php echo WWW;?>assets/vendor/nanoscroller/nanoscroller.js"></script>
@@ -135,8 +135,8 @@ require_once ROOT."/html/personalizacao_display.php";
 
     <script>
     $(function(){
-        $("#header").load("<?php //echo WWW;?>/html/header.php");
-        $(".menuu").load("<?php //echo WWW;?>/html/menu.php");
+        $("#header").load("<?php echo WWW;?>/tml/header.php");
+        $(".menuu").load("<?php echo WWW;?>html/menu.php");
     });
 
     </script>
