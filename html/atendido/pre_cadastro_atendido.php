@@ -135,7 +135,7 @@ require_once ROOT."/html/personalizacao_display.php";
 
     <script>
     $(function(){
-        $("#header").load("<?php echo WWW;?>/tml/header.php");
+        $("#header").load("<?php echo WWW;?>html/header.php");
         $(".menuu").load("<?php echo WWW;?>html/menu.php");
     });
 
@@ -313,13 +313,13 @@ require_once ROOT."/html/personalizacao_display.php";
         </script>
     <!-- end: page -->
     <!-- Vendor -->
-        <script src="../../Functions/onlyNumbers.js"></script>
+        <script src="../../Function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s/onlyNumbers.js"></script>
         <script src="../../Functions/onlyChars.js"></script>
         <script src="../../Functions/mascara.js"></script>
         <script src="../../Functions/lista.js"></script>
-        <script src="<?php echo WWW;?>/assets/vendor/select2/select2.js"></script>
-        <script src="<?php echo WWW;?>/assets/vendor/jquery-datatables/media/js/jquery.dataTables.js"></script>
-        <script src="<?php echo WWW;?>/assets/vendor/jquery-datatables/extras/TableTools/js/dataTables.tableTools.min.js"></script>
+        <script src="<?php echo WWW;?>assets/vendor/select2/select2.js"></script>
+        <script src="<?php echo WWW;?>assets/vendor/jquery-datatables/media/js/jquery.dataTables.js"></script>
+        <script src="<?php echo WWW;?>assets/vendor/jquery-datatables/extras/TableTools/js/dataTables.tableTools.min.js"></script>
         <script src="<?php echo WWW;?>assets/vendor/jquery-datatables-bs3/assets/js/datatables.js"></script>
         
         <!-- Theme Base, Components and Settings -->
