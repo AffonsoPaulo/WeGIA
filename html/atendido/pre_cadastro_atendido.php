@@ -1,5 +1,5 @@
 <?php
-
+// OI!
 $config_path = "config.php";
 if(file_exists($config_path)){
     require_once($config_path);
@@ -79,7 +79,7 @@ require_once ROOT."/html/personalizacao_display.php";
     <!-- Vendor CSS -->
     <link rel="stylesheet" href="<?php echo WWW;?>assets/vendor/bootstrap/css/bootstrap.css" />
     <link rel="stylesheet" href="<?php echo WWW;?>assets/vendor/font-awesome/css/font-awesome.css" />
-    <link rel="stylesheet" href="https:use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
     <link rel="stylesheet" href="<?php echo WWW;?>assets/vendor/magnific-popup/magnific-popup.css" />
     <link rel="stylesheet" href="<?php echo WWW;?>assets/vendor/bootstrap-datepicker/css/datepicker3.css" />
     <link rel="icon" href="<?php display_campo("Logo",'file');?>" type="image/x-icon" id="logo-icon">
@@ -92,7 +92,7 @@ require_once ROOT."/html/personalizacao_display.php";
     <link rel="stylesheet" href="<?php echo WWW;?>assets/stylesheets/theme.css" />
 
     <!-- Skin CSS -->
-    <link rel="stylesheet" href="<?php echo WWW;?>assets/stylesheets/skins/default.css" />
+    <link rel="stylesheet" href="<?php echo WWW;?>/assets/stylesheets/skins/default.css" />
 
     <!-- Theme Custom CSS -->
     <link rel="stylesheet" href="<?php echo WWW;?>assets/stylesheets/theme-custom.css">
@@ -279,6 +279,7 @@ require_once ROOT."/html/personalizacao_display.php";
         </section>
         <script>
             function testaCPF(strCPF) { //strCPF é o cpf que será validado. Ele deve vir em formato string e sem nenhum tipo de pontuação.
+                var strCPF = strCPF.replace(/[^\d]+/g, ''); // Limpa a string do CPF removendo espaços em branco e caracteres especiais.
                 var Soma;
                 var Resto;
                 Soma = 0;
@@ -313,7 +314,7 @@ require_once ROOT."/html/personalizacao_display.php";
         </script>
     <!-- end: page -->
     <!-- Vendor -->
-        <script src="../../Function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s/onlyNumbers.js"></script>
+        <script src="../../Functions/onlyNumbers.js"></script>
         <script src="../../Functions/onlyChars.js"></script>
         <script src="../../Functions/mascara.js"></script>
         <script src="../../Functions/lista.js"></script>

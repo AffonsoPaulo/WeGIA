@@ -55,6 +55,7 @@
 
    $cpf= $_GET['cpf'];
 ?>
+
 	<!doctype html>
 <html class="fixed">
 <head>
