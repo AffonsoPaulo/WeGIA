@@ -34,7 +34,7 @@
 	<link rel="stylesheet" href="../assets/vendor/magnific-popup/magnific-popup.css" />
 	<link rel="stylesheet" href="../assets/vendor/bootstrap-datepicker/css/datepicker3.css" />
 
-	<!--Página Css que não interfere no estilo de oputras páginas do sistema-->
+	<!--Página Css que não interfere no estilo de outras páginas do sistema-->
 	<link rel="stylesheet" href="../css/home-theme.css" />
 
 	<!-- Specific Page Vendor CSS -->
