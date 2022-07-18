@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de  Voluntário</title>
+
+    <link rel="stylesheet" href="stylesheet/style-body.css"/> 
+    <link rel="stylesheet" href="stylesheet/theme-custom.css"/> 
+    <link rel="stylesheet" href="stylesheet/default.css"/> 
+</head>
+
+<body>
+    <section class="body">
+        <!-- HEADER da pagina-->
+        <div id="header">
+            
+            <header class="header">
+                <div class="logo-container">
+                    <a href="https://demo.wegia.org/html/home.php" class="logo">
+                        <img src="data:image;base64,iVBORw0KGgoAAAANSUhEUgAACPkAAAah…AIOeUfAAAAAAAAAAAIOf+/0Mh4g/cTZS7AAAAAElFTkSuQmCC" height="35" alt="Porto Admin">
+                    </a>
+
+                    <div class="visible-xs toggle-sidebar-left" data-toggle-class="sidebar-left-opened" data-target="html" data-fire-event="sidebar-left-opened">
+                        <i class="fa fa-bars" aria-label="Toggle sidebar"></i>
+                    </div>
+                </div>
+
+                <div class="header-right">
+                    <span class="separator"></span>
+                    <div id="userbox" class="userbox">
+                        <a href="#" data-toggle="dropdown" aria-expanded="false">
+
+                            <figure class="profile-picture">
+                                <img src="https://demo.wegia.org/img/semfoto.png" alt="Joseph Doe" class="img-circle">
+                            </figure>
+                            <div class="profile-info" data-lock-name="John Doe" data-lock-email="johndoe@okler.com">
+                                <span class="name">admin</span>
+                                <span class="role">Administrador</span>        
+                            </div>
+                            <i class="fa custom-caret"></i>
+                        </a>
+
+                        <div class="dropdown-menu">
+                            <ul class="list-unstyled">
+                                <li class="divider"></li>
+                                <li>
+                                    <a role="menuitem" tabindex="-1" href="https://demo.wegia.org/html/alterar_senha.php"><i class="glyphicon-lock"></i>Alterar Senha</a>
+                                </li>
+                                <li>
+                                    <a role="menuitem" tabindex="-1" href="https://demo.wegia.org/html/logout.php"><i class="fa fa-power-off"></i>Sair da Sessão</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </header>
+        </div>
+        
+
+        <!-- Body da pagina-->
+        <div class="inner-wrapper" >
+
+            <!--MENU-->
+            <aside id="sidebar-left" class="sidebar-left menuu">
+                <div class="sidebar-header">
+                    <div class="sidebar-title">Menu</div>
+                    <div class="sidebar-toggle hidden-xs" data-toggle-class="sidebar-left-collapsed" data-target="html" data-fire-event="sidebar-left-toggle">
+                        <i class="fa fa-bars" aria-label="Toggle sidebar"></i>
+                    </div>
+                </div>
+
+                <div class="nano has-scrollbar">
+                    <div class="nano-content" tabindex="0" style="display: flex; flex-direction: column; justify-content: space-between; padding-bottom: 0px; right: -17px;">
+                        <nav id="menu" class="nav-main" role="navigation">
+                            <ul class="nav nav-main">
+                                <li>
+                                    <a href="https://demo.wegia.org/html/home.php">
+                                        <i class="fa fa-home" aria-hidden="true"></i>
+                                        <span>Início</span>
+                                    </a>
+                                </li>
+
+                                <li class="nav-parent nav-active" id="1">
+                                    <a>
+                                        <i class="far fa-address-book"></i>
+                                        <span>Pessoas</span>
+                                    </a>
+                                    <ul class="nav nav-children">
+                                        <li class="nav-parent nav-active">
+                                            <a>
+                                                <i class="fa fa-briefcase" aria-hidden="true"></i>
+                                                <span>Funcionários</span>
+                                            </a>
+                                            <ul class="nav nav-children" id="11">
+                                                <li>
+                                                    <a href="https://demo.wegia.org/html/funcionario/pre_cadastro_funcionario.php">
+                                                        <span>Cadastrar Funcionário</span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="https://demo.wegia.org/controle/control.php?metodo=listarTodos&nomeClasse=FuncionarioControle&nextPage=https://demo.wegia.org/html/funcionario/informacao_funcionario.php">
+                                                        <span>Informações Funcionários</span>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </li>
+
+                                        <li class="nav-parent nav-active">
+                                            <a>
+                                                <i class="fa fa-user" aria-hidden="true"></i>
+                                                <span>Atendidos</span>
+                                            </a>
+
+                                            <ul class="nav nav-children" id="12">
+                                                <li>
+                                                    <a href="https://demo.wegia.org/html/atendido/pre_cadastro_atendido.php">
+                                                        <span>Cadastrar Atendido</span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="https://demo.wegia.org/controle/control.php?metodo=listarTodos&nomeClasse=AtendidoControle&nextPage=https://demo.wegia.org/html/atendido/Informacao_Atendido.php">
+                                                        <span>Informações Atendido</span>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </li>
+
+                                        <li class="nav-parent nav-active">
+                                            <a>
+                                                <i class="fa fa-adrress-book" aria-hidden="true"></i>
+                                                <span>Ocorrências</span>
+                                            </a>
+
+                                            <ul class="nav nav-children" id="13">
+                                                <li>
+                                                    <a href="https://demo.wegia.org/controle/control.php?metodo=listarTodos&nomeClasse=AtendidoControle&nextPage=https://demo.wegia.org/html/atendido/cadastro_ocorrencia.php">
+                                                        <span>Cadastrar Ocorrências</span>
+                                                    </a>
+                                                </li>
+
+                                                <li>
+                                                    <a href="https://demo.wegia.org/controle/control.php?metodo=listarTodos&nomeClasse=Atendido_ocorrenciaControle&nextPage=https://demo.wegia.org/html/atendido/listar_ocorrencias_ativas.php">
+                                                        <span>Ocorrências Ativas</span>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+
+                                <li class="nav-parent nav-active" id="2">
+                                    <a>
+                                        <i class="fa fa-copy"  aria-hidden="true"></i>
+                                        <span>Materia e Patrimônio</span>
+                                    </a>
+                                    <ul class="nav nav-children">
+                                        <li class="nav-parent nav-active" id="21">
+                                            <a>
+                                                <i class="fas fa-circle-arrow-down" aria-hidden="true"></i>
+                                                <span>Entrada</span>
+                                            </a>
+                                            <ul class="nav nav-children" >
+                                                <li>
+                                                    <a href="https://demo.wegia.org/html/cadastro_entrada.php">
+                                                        <span>Registrar Entrada</span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="https://demo.wegia.org/html/listar_entrada.php">
+                                                        <span>Informações de Entrada</span>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </li>
+
+                                        <li class="nav-parent nav-active" id="22">
+                                            <a>
+                                                <i class="fas fa-circle-arrow-up" aria-hidden="true"></i>
+                                                <span>Saída</span>
+                                            </a>
+                                            <ul class="nav nav-children">
+                                                <li>
+                                                    <a href="https://demo.wegia.org/html/cadastro_saida.php">
+                                                        <span>Registrar Saída</span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="https://demo.wegia.org/html/listar_saida.php">
+                                                        <span>Informações de Saída</span>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </li>
+
+
+
+                                        <li class="nav-parent nav-active" id="23">
+                                            <a>
+                                                <i class="fas fa-boxes" aria-hidden="true"></i>
+                                                <span>Estoque</span>
+                                            </a>
+                                            <ul class="nav nav-children">
+                                                <li>
+                                                    <a href="https://demo.wegia.org/html/relatorio.php">
+                                                        <i class="fa fa-clipboard"></i>
+                                                        <span>Registrar Relatório</span>
+                                                    </a>
+                                                </li>
+                                                <li class="nav-parent nav-active" id="24">
+                                                    <a>
+                                                        <i class="fa fa-box"  aria-hidden="true"></i>
+                                                        <span>Produtos</span>
+                                                    </a>
+                                                    <ul class="nav nav-children">
+                                                        <li>
+                                                            <a href="https://demo.wegia.org/html/cadastro_produto.php">
+                                                                <span>Cadastrar Produtos</span>
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                                <li class="nav-parent nav-active" id="25">
+                                                    <a>
+                                                        <i class="fa fa-warehouse"  aria-hidden="true"></i>
+                                                        <span>Almoxarifado</span>
+                                                    </a>
+                                                    <ul class="nav nav-children">
+                                                        <li>
+                                                            <a href="https://demo.wegia.org/html/adicionar_almoxarifado.php">
+                                                                <span>Adicionar Almoxarifado</span>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="https://demo.wegia.org/html/listar_almox.php">
+                                                                <span>Listar Almoxarifado</span>
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+
+                                <li class="nav-parent nav-active">
+                                    <a>
+                                        <i class="fa fa-book"  aria-hidden="true"></i>
+                                        <span>Memorando</span>
+                                    </a>
+                                    <ul class="nav nav-children">
+                                        <li id="31">
+                                            <a href="https://demo.wegia.org/html/memorando/listar_memorandos_ativos.php">
+                                                <span>Caixa de Entrada</span>
+                                            </a>
+                                        </li>
+                                        <li id="31">
+                                            <a href="https://demo.wegia.org/html/memorando/novo_memorandoo.php">
+                                                <span>Criar Mememorando</span>
+                                            </a>
+                                        </li>
+                                        <li id="32">
+                                            <a href="https://demo.wegia.org/html/memorando/listar_memorandos_antigos.php">
+                                                <span>Memorando Despachados</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+
+                                <li class="nav-parent nav-active">
+                                    <a>
+                                        <i class="fa fa-users" aria-hidden="true"></i>
+                                        <span>Sócios</span>
+                                        
+                                    </a>
+                                    <ul class="nav nav-children">
+                                        <li id="31">
+                                            <a href="https://demo.wegia.org/html/socio/">
+                                                <i class="fa fa-users"></i>
+                                                <span>Lista de Sócios</span>
+                                            </a>
+                                        </li>
+                                        <li id="31">
+                                            <a href="https://demo.wegia.org/html/socio/sistema/relatorios_socios.php">
+                                                <i class="fa fa-clipboard"></i>
+                                                <span>Relatório Sócios</span>
+                                            </a>                                        
+                                        </li>
+
+                                        <li class="nav-parent nav-active" id="32">
+                                            <a>
+                                                <i class="fa fa-money-bill" aria-hidden="true"></i>
+                                                <span>Cobranças</span>
+                                            </a>
+                                            <ul>
+                                                <li class="nav nav-children">
+                                                    <a href="https://demo.wegia.org/html/socio/sistema/psocio_geracao.php">
+                                                        <span>Gerar Carnê/Boleto para Sócio</span>
+                                                    </a>
+                                                </li>
+                                                <li class="nav nav-children">
+                                                    <a href="https://demo.wegia.org/html/socio/sistema/cobrancas.php">
+                                                        <span>Controle de Cobranças</span>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </li>
+
+                                        <li class="nav-parent nav-active" id="33">
+                                            <a>
+                                                <i class="fa fa-plus-square" aria-hidden="true"></i>
+                                                <span>Extra</span>
+                                            </a>
+                                            <ul>
+                                                <li class="nav nav-children">
+                                                    <a href="https://demo.wegia.org/html/socio/sistema/tags.php">
+                                                        <span>Tags</span>
+                                                    </a>
+                                                </li>
+                                                
+                                            </ul>
+                                        </li>
+
+                                    </ul>
+                                </li>
+
+                                <li class="nav-parent nav-active nav-expanded" id="4">
+                                    <a>
+                                        <i class="fa fa-hospital-user" aria-hidden="true"></i>
+                                        <span>Saúde</span>
+                                    </a>
+
+                                    <ul class="nav nav-children">
+
+                                        <li class="nav-parent nav-active" id="41">
+                                            <a>
+                                                <i class="fa fa-user" aria-hidden="true"></i>
+                                                <span>Paciente</span>
+                                            </a>
+
+                                            <ul class="nav nav-children">
+                                                <li>
+                                                    <a href="https://demo.wegia.org/html/saude/cadastro_ficha_medica.php">
+                                                        <span>Cadastrar Ficha Médica</span>
+                                                    </a>
+                                                    
+                                                </li>
+
+                                                <li>
+                                                    <a href="https://demo.wegia.org/html/saude/informacao_saude.php">
+                                                        <span>Informações dos Pacientes</span>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </li>
+
+                                        <li class="nav-parent nav-active" id="42">
+                                            <a>
+                                                <i class="fa fa-user-md" aria-hidden="true"></i>
+                                                <span>Enfermaria</span>
+                                            </a>
+                                            <ul class="nav nav-children">
+                                                <li>
+                                                    <a href="https://demo.wegia.org/html/saude/administrar_medicamento.php">
+                                                        <span>Administrar Medicamentos</span>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+
+                                <li class="nav-parent nav-active">
+                                    <a>
+                                        <i class="fa fa-cog" aria-hidden="true"></i>
+                                        <span>Configurações</span>
+                                    </a>
+                                    <ul class="nav nav-children">
+                                        <li id="41">
+                                            <a href="https://demo.wegia.org/html/personalizacao.php">
+                                                <scan>Editar Conteúdo</scan>
+                                            </a>
+                                        </li>
+                                        <li id="42">
+                                            <a href="https://demo.wegia.org/html/personalizacao_imagem.php">
+                                                <scan>Listar Imagens</scan>
+                                            </a>
+                                        </li>
+
+                                        <li id="43">
+                                            <a href="https://demo.wegia.org/html/configuracao/configuracao_geral.php">
+                                                <scan>Configurações Gerais</scan>
+                                            </a>
+                                        </li>
+
+                                        <li id="44">
+                                            <a href="https://demo.wegia.org/html/contribuicao/php/configuracao_doacao.php">
+                                                <scan>Contribuições</scan>
+                                            </a>
+                                        </li>
+
+                                        <li id="45">
+                                            <a href="https://demo.wegia.org/html/geral/editar_permissoes.php">
+                                                <scan>Permissões</scan>
+                                            </a>
+                                        </li>
+
+                                        <li id="47">
+                                            <a href="https://demo.wegia.org/html/geral/cargos.php">
+                                                <scan>Cargos</scan>
+                                            </a>
+                                        </li>
+                                        
+                                        <li id="47">
+                                            <a href="https://demo.wegia.org/html/geral/documentos_funcionario.php">
+                                                <scan>Documentos dos Funcionários</scan>
+                                            </a>
+                                        </li>
+
+                                        <li id="46">
+                                            <a href="https://demo.wegia.org/html/configuracao/debug_info.php">
+                                                <scan>Informações de Bug</scan>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+
+                                <li id="5">
+                                    <a href="https://demo.wegia.org/manual/index.php">
+                                        <i class="fa fa-book" aria-hidden="true"></i>
+                                        <scan>Manual</scan>
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+
+                        <p style="text-align:center;">
+                            "Release Instalada:"
+                            <br>
+                            "Friday, 06 de May de 2022, ás 00:00"
+                        </p>
+                    </div>
+
+                    <div class="nano-pane" style="display: none; opacity: 1; visibility: visible;">
+                        <div class="nano-slide" style="height: 531px; transform: translate(0px,0px);"></div>
+                    </div>
+                </div>
+            </aside>
+
+            <section role="main" class="content-body">
+                <!-- Header do body-->
+                <header class="page-header">
+                    <h2>Cadastro</h2>
+                    <div class="right-wrapper pull-right">
+                        <ol class="breadcrumbs">
+                            <li>
+                                <a href="home.php">
+                                    <i class="fa fa home"></i>
+                                </a>
+                            </li>
+                            <li><span>Cadastro</span></li>
+                            <li><span>Voluntário</span></li>
+                        </ol>
+                        <a class="sidebar-right-toggle"><i class="fa fa-chevron-left"></i></a>
+                    </div>
+                </header>
+
+
+                <!-- Body-->
+                <div class="col-md-8 col-lg-12">
+                    <div class="tabs">
+                        <ul class="nav nav-tabs tabs-primary">
+                            <li class="active">
+                                <a href="#overview" data-toggle="tab">Cadastro Voluntário</a>
+                            </li>
+                        </ul>
+
+                        <div class="tab-content">
+                            <div id="overview" class="tab-pane active">
+                                <form class="form-horizontal" method="GET" action="../../controle/control.php" id="form-cadastro" enctype="multipart/form-data">
+                                    <h4 class="mb-xlg">Informações Pessoais</h4>
+                                    <h5 class="obrig">Campos Obrigatórios(*)</h5>
+
+                                    <!--COISAS DE PHP PRA SEREM ALTERADAS-->
+                                    <div class="form-group"> <!--NOME-->
+                                        <label class="col-md-3 control-label"  for="profileNomeCompleto">Nome Completo<sup class="obrig">*</sup></label>
+                                        <div class="col-md-6">
+                                            <input type="text" class="form-control" name="nomeCompleto" id="nomeCompleto" id="profileNomeCompleto" onkeypress="" required>
+                                        </div>
+                                    </div>
+
+                                    <!--COISAS DE PHP PRA SEREM ALTERADAS-->
+                                    <div class="form-group"> <!--PROFISSAO-->
+                                        <label class="col-md-3 control-label" for="profileProfissao">Profissão<sup class="obrig">*</sup></label>
+                                        <div class="col-md-6">
+                                            <input type="text" class="form-control" name="profissao" id="profissao" id="profileProfissao" onkeypress="" required>
+                                        </div>
+                                    </div>
+
+                                    <!--COISAS DE PHP PRA SEREM ALTERADAS-->
+                                    <div class="form-group"> <!--DATA DE CADASTRO-->
+                                        <label class="col-md-3 control-label" for="profileDataCadastro">Data de Cadastro<sup class="obrig">*</sup></label>
+                                        <div class="col-md-6">
+                                            <input type="date" placeholder="dd/mm/aaaa" maxlength="8" class="form-control" name="dataCadastro" id="dataCadastro" max="" required>
+                                        </div>
+                                    </div>
+
+                                    <!--COISAS DE PHP PRA SEREM ALTERADAS-->
+                                    <div class="form-group"> <!--TELEFONE-->
+                                        <label class="col-md-3 control-label" for="profileTelefone"  >Telefone<sup class="obrig">*</sup></label>
+                                        <div class="col-md-6">
+                                            <input type="text" class="form-control"  maxlength="14" minlength="11" name="telefone" id="telefone" id="profileTelefone" placeholder="(24)99999-9999" onkeypress="" onkeyup="mascara( '(##)#####-####', this, event)">
+                                        </div>
+                                    </div>
+
+                                    <!--COISAS DE PHP PRA SEREM ALTERADAS-->
+                                    <div class="form-group"> <!--E-MAIL-->
+                                        <label class="col-md-3 control-label" for="profileEmail"  >E-mail<sup class="obrig">*</sup></label>
+                                        <div class="col-md-6">
+                                            <input type="text" class="form-control" name="email" placeholder="Digite seu e-mail" id="" onkeypress="" required>
+                                        </div>
+                                    </div>
+
+                                    <!--COISAS DE PHP PRA SEREM ALTERADAS-->
+                                    <div class="form-group"> <!--DISPONIBILIDADE-->
+                                        <label class="col-md-3 control-label"  for="profileDisponibilidade"  >Disponibilidade<sup class="obrig">*</sup></label>
+                                        <div class="col-md-6">
+                                            <input type="text" class="form-control" name="disponibilidade" id="disponibilidade" onkeypress="" required>
+                                        </div>
+                                    </div>
+
+                                    <!--COISAS DE PHP PRA SEREM ALTERADAS-->
+                                    <div class="form-group"> <!--Observação-->
+                                        <label class="col-md-3 control-label"  for="profileObservacao"  >Observação<sup class="obrig">*</sup></label>
+                                        <div class="col-md-6">
+                                            <input type="text" class="form-control" name="observacao" id="observacao" onkeypress="" required>
+                                        </div>
+                                    </div>
+
+                                    <!--DOCUMENTAÇÂO Parte Inferior-->
+                                    <h4 class="mb-xlg doch4">Documentação</h4>
+                                    <div class="form-group">
+                                        <label class="col-md-3 control-label" for="cpf">CPF<sup class="obrig">*</sup></label>
+                                        <div class="col-md-4">
+                                            <input type="text" class="form-control" id="cpf" name="cpf" placeholder="EX: 222.222.222-22" maxlength="14" minlength="11" onblur="" onkeypress="" onkeyup="" value="" disabled>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label class="col-md-3 control-label" for="profileCompany"></label>
+                                        <div class="col-md-6">
+                                            <p id="cpfInvalido" style="display: none; color: #b30000">CPF INVÁLIDO</p>
+                                        </div>
+                                    </div>
+
+                                    <!--BOTÃO ENVIAR-->
+                                    <div class="panel-footer">
+                                        <div class="row">
+                                            <div class="col-md-9 col-md-offset-3">
+                                                <input type="hidden" name="" value="">
+                                                <input type="hidden" name="" value="">
+                                                <input type="hidden" name="" value="">
+                                                <input type="submit" id="enviar" class="btn btn-primary" value="Enviar" onclick="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+
+        <aside id="sidebar-right" class="sidebar-right">
+            <div class="nano">
+                <div class="nano-content">
+                    <a href="#" class="mobile-close visible-xs">Collapse<i class="fa fa-chevron-right"></i></a>
+                </div>
+            </div>
+        </aside>
+    
+
+
+
+    </section>
+</body>
+</html>
